@@ -1,5 +1,6 @@
 import '../styles/globals.css'; // 引入全局樣式
 import styles from '../styles/Home.module.css';
+import Link from 'next/link'; // Import Next.js Link component
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -7,10 +8,26 @@ function MyApp({ Component, pageProps }) {
       <header className={styles.header}>
         <nav>
           <ul className={styles.navbar}>
-            <li><a href="/">Home</a></li>
-            <li><a href="menu">Menu</a></li>
-            <li><a href="shop">Shop</a></li>
-            <li><a href="#">About Us</a></li>
+            <li>
+              <Link href="/" legacyBehavior>
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/menu" legacyBehavior>
+                <a>Menu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/shop" legacyBehavior>
+                <a>Shop</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" legacyBehavior>
+                <a>About Us</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
