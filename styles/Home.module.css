@@ -1,0 +1,80 @@
+.container {
+    padding: 0;
+    margin: 0;
+    background-color: #ffeb3b; /* 黃色底色 */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .main {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #eaeaea;
+  }
+  
